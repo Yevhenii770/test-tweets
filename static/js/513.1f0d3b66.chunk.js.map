@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/513.1f0d3b66.chunk.js","mappings":"wHAGA,UAHa,WACX,OAAO,uCACR,C","sources":["Components/Pages/Home/Home.jsx"],"sourcesContent":["const Home = () => {\n  return <div>AMORCHENKO</div>;\n};\nexport default Home;\n"],"names":[],"sourceRoot":""}
