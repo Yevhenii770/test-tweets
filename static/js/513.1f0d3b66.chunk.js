@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunktweets=self.webpackChunktweets||[]).push([[513],{513:function(e,t,n){n.r(t);var s=n(184);t.default=function(){return(0,s.jsx)("div",{children:"AMORCHENKO"})}}}]);
-//# sourceMappingURL=513.1f0d3b66.chunk.js.map
