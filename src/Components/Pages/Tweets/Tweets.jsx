@@ -9,6 +9,7 @@ import {
   BgPhotoDiv,
   ContentDiv,
   Text,
+  Svg,
 } from './Tweets.styled';
 import img from '../../img/picture2 1.png';
 import logo from '../../img/logo.svg';
@@ -55,7 +56,7 @@ const Tweets = () => {
               <CardDiv>
                 <BgPhotoDiv>
                   <div>
-                    <img src={logo} alt="goit" />
+                    <Svg src={logo} alt="goit" />
                     <BgPhoto src={img} alt="logo" />
                   </div>
                 </BgPhotoDiv>
