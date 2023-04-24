@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 
 const Layout = () => {
   return (
-    <section>
+    <>
       <header>
         <div>
           <NavLink to="/">Home</NavLink>
@@ -14,7 +14,7 @@ const Layout = () => {
       <Suspense fallback={<p>Loading...</p>}>
         <Outlet />
       </Suspense>
-    </section>
+    </>
   );
 };
 

@@ -4,6 +4,7 @@ export const Ul = styled.ul`
   display: flex;
   flex-wrap: wrap;
   gap: 48px;
+  margin-bottom: 20px;
 `;
 
 export const CardDiv = styled.div`
@@ -58,8 +59,6 @@ export const BgPhoto = styled.img`
   left: 36px;
 `;
 
-export const BgPhotoDiv = styled.div``;
-
 export const ContentDiv = styled.div`
   display: flex;
   flex-direction: column;
@@ -79,4 +78,18 @@ export const Svg = styled.img`
   position: absolute;
   top: 20px;
   left: 20px;
+`;
+
+export const BtnLoadMore = styled.button`
+  cursor: pointer;
+  width: 196px;
+  height: 50px;
+  color: white;
+  background: grey;
+  border-radius: 10.3108px;
+`;
+
+export const BtnDiv = styled.div`
+  display: flex;
+  justify-content: center;
 `;

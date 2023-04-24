@@ -6,10 +6,11 @@ import {
   PhotoImg,
   Button,
   BgPhoto,
-  BgPhotoDiv,
   ContentDiv,
   Text,
   Svg,
+  BtnLoadMore,
+  BtnDiv,
 } from './Tweets.styled';
 import img from '../../img/picture2 1.png';
 import logo from '../../img/logo.svg';
@@ -48,37 +49,49 @@ const Tweets = () => {
   ///
 
   return (
-    <div>
-      <Ul>
-        {tweets.map(({ id, avatar, tweets, user, followers }) => {
-          return (
-            <li key={id}>
-              <CardDiv>
-                <BgPhotoDiv>
+    <main>
+      <div
+        style={{
+          maxWidth: '1236px',
+          margin: '0 auto',
+          padding: '10px 10px',
+        }}
+      >
+        <Ul>
+          {tweets.map(({ id, avatar, tweets, user, followers }) => {
+            return (
+              <li key={id}>
+                <CardDiv>
                   <div>
-                    <Svg src={logo} alt="goit" />
-                    <BgPhoto src={img} alt="logo" />
+                    <div>
+                      <Svg src={logo} alt="goit" />
+                      <BgPhoto src={img} alt="logo" />
+                    </div>
                   </div>
-                </BgPhotoDiv>
-                <PhotoImg src={avatar} alt={user} />
-                <ContentDiv>
-                  <Text>{tweets} TWEETS</Text>
-                  <Text>{followers} FOLLOWERS</Text>
-                </ContentDiv>
-                <Button
-                  onClick={() => {
-                    updateSubscribe(id);
-                  }}
-                >
-                  FOLLOW
-                </Button>
-              </CardDiv>
-            </li>
-          );
-        })}
-      </Ul>
-      {!isButtonHidden && <button onClick={handleLoadMore}>Load More</button>}
-    </div>
+                  <PhotoImg src={avatar} alt={user} />
+                  <ContentDiv>
+                    <Text>{tweets} TWEETS</Text>
+                    <Text>{followers} FOLLOWERS</Text>
+                  </ContentDiv>
+                  <Button
+                    onClick={() => {
+                      updateSubscribe(id);
+                    }}
+                  >
+                    FOLLOW
+                  </Button>
+                </CardDiv>
+              </li>
+            );
+          })}
+        </Ul>
+        {!isButtonHidden && (
+          <BtnDiv>
+            <BtnLoadMore onClick={handleLoadMore}>Load More</BtnLoadMore>
+          </BtnDiv>
+        )}
+      </div>
+    </main>
   );
 };
 export default Tweets;
