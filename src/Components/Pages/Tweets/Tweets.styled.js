@@ -51,6 +51,7 @@ export const Button = styled.button`
 
   background: #ebd8ff;
   border-radius: 10.3108px;
+  margin-bottom: 36px;
 `;
 
 export const BgPhoto = styled.img`

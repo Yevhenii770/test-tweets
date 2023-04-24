@@ -6,7 +6,13 @@ const Layout = () => {
   return (
     <>
       <header>
-        <div>
+        <div
+          style={{
+            backgroundColor: 'gray',
+            marginBottom: '30px',
+            padding: '20px 50px',
+          }}
+        >
           <NavLink to="/">Home</NavLink>
           <NavLink to="/tweets">Tweets</NavLink>
         </div>
