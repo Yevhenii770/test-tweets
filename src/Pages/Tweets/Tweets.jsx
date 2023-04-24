@@ -1,27 +1,24 @@
 import { useState, useEffect } from 'react';
-import { fetchUsers, addFolowers } from '../../Api/Api';
+import { fetchUsers } from '../../Api/Api';
 import {
   CardDiv,
   Ul,
   PhotoImg,
-  Button,
   BgPhoto,
   ContentDiv,
   Text,
   Svg,
-  BtnLoadMore,
-  BtnDiv,
   Ellipse,
   HorizontalLine,
 } from './Tweets.styled';
-import img from '../../img/picture2 1.png';
+import img from '../../img/picture.png';
 import logo from '../../img/logo.svg';
 import line from '../../img/rectangle.svg';
 import ellipse from '../../img/ellipse.svg';
-
+import LoadMoreBtn from '../../Components/ButtonLoadMore/LoadMore';
+import FollowBtn from '../../Components/ButtonFollow/Follow';
 const Tweets = () => {
   const [data, setData] = useState([]);
-  const [page, setPage] = useState(1);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -33,25 +30,15 @@ const Tweets = () => {
     fetchData();
   }, []);
 
-  /// пагинация
+  const [page, setPage] = useState(1);
   const ITEMS_PER_PAGE = 3;
-  const updateSubscribe = id => {
-    const updObj = data.find(el => el.id === id);
 
-    const number = updObj.followers;
-    updObj.followers = number + 1;
-
-    if (updObj) {
-      console.log(updObj);
-      addFolowers(id, updObj);
-    }
-  };
   const tweets = data.slice(0, ITEMS_PER_PAGE * page);
   const isButtonHidden = ITEMS_PER_PAGE * page >= data.length;
+
   const handleLoadMore = () => {
     setPage(prevState => prevState + 1);
   };
-  ///
 
   return (
     <main>
@@ -78,23 +65,13 @@ const Tweets = () => {
                     <Text>{tweets} TWEETS</Text>
                     <Text>{followers} FOLLOWERS</Text>
                   </ContentDiv>
-                  <Button
-                    onClick={() => {
-                      updateSubscribe(id);
-                    }}
-                  >
-                    FOLLOW
-                  </Button>
+                  <FollowBtn data={data} id={id} />
                 </CardDiv>
               </li>
             );
           })}
         </Ul>
-        {!isButtonHidden && (
-          <BtnDiv>
-            <BtnLoadMore onClick={handleLoadMore}>Load More</BtnLoadMore>
-          </BtnDiv>
-        )}
+        {!isButtonHidden && <LoadMoreBtn handleLoadMore={handleLoadMore} />}
       </div>
     </main>
   );

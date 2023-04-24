@@ -9,7 +9,6 @@ const Layout = () => {
         <div
           style={{
             backgroundColor: 'gray',
-            marginBottom: '30px',
             padding: '20px 50px',
           }}
         >
