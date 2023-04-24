@@ -43,9 +43,7 @@ export const Button = styled.button`
   border-radius: 10.3108px;
 `;
 
-export const BgPhoto = styled.img`
-  margin-top: 28px;
-`;
+export const BgPhoto = styled.img``;
 
 export const BgPhotoDiv = styled.div``;
 
