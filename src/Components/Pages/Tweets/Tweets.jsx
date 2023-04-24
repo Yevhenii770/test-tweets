@@ -11,9 +11,14 @@ import {
   Svg,
   BtnLoadMore,
   BtnDiv,
+  Ellipse,
+  HorizontalLine,
 } from './Tweets.styled';
 import img from '../../img/picture2 1.png';
 import logo from '../../img/logo.svg';
+import line from '../../img/rectangle.svg';
+import ellipse from '../../img/ellipse.svg';
+
 const Tweets = () => {
   const [data, setData] = useState([]);
   const [page, setPage] = useState(1);
@@ -63,11 +68,11 @@ const Tweets = () => {
               <li key={id}>
                 <CardDiv>
                   <div>
-                    <div>
-                      <Svg src={logo} alt="goit" />
-                      <BgPhoto src={img} alt="logo" />
-                    </div>
+                    <Svg src={logo} alt="goit" />
+                    <BgPhoto src={img} alt="logo" />
                   </div>
+                  <HorizontalLine src={line} alt="goit" />
+                  <Ellipse src={ellipse} alt="goit" />
                   <PhotoImg src={avatar} alt={user} />
                   <ContentDiv>
                     <Text>{tweets} TWEETS</Text>

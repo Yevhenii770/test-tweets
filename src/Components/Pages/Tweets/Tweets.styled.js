@@ -38,9 +38,9 @@ export const PhotoImg = styled.img`
     inset 0px 4.39163px 3.29372px #fbf8ff;
 
   height: 63px;
-  left: 163.5px;
+  left: 158.5px;
   position: absolute;
-  top: 186.5px;
+  top: 188.5px;
   width: 63px;
 `;
 
@@ -63,6 +63,7 @@ export const ContentDiv = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 16px;
 `;
 
 export const Text = styled.p`
@@ -92,4 +93,13 @@ export const BtnLoadMore = styled.button`
 export const BtnDiv = styled.div`
   display: flex;
   justify-content: center;
+`;
+
+export const HorizontalLine = styled.img`
+  top: 214px;
+  position: absolute;
+`;
+export const Ellipse = styled.img`
+  position: absolute;
+  top: 180px;
 `;

@@ -8,7 +8,7 @@ const Tweets = lazy(() => import('./Pages/Tweets/Tweets'));
 
 function App() {
   return (
-    <div>
+    <>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
@@ -16,7 +16,7 @@ function App() {
         </Route>
         <Route path="*" element={<NotFound />} />
       </Routes>
-    </div>
+    </>
   );
 }
 
