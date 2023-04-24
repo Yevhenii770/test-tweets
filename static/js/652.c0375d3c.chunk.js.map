@@ -1,1 +1,0 @@
-{"version":3,"file":"static/js/652.c0375d3c.chunk.js","mappings":"wHAGA,UAHe,WACb,OAAO,uCACR,C","sources":["Components/Pages/Tweets/Tweets.jsx"],"sourcesContent":["const Tweets = () => {\n  return <div>AMORCHENKO</div>;\n};\nexport default Tweets;\n"],"names":[],"sourceRoot":""}
