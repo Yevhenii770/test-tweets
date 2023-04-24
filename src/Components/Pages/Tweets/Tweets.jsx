@@ -1,16 +1,18 @@
 import { useState, useEffect } from 'react';
 import { fetchUsers, addFolowers } from '../../Api/Api';
 import {
-  CardLi,
+  CardDiv,
   Ul,
   PhotoImg,
   Button,
   BgPhoto,
   BgPhotoDiv,
   ContentDiv,
+  Text,
 } from './Tweets.styled';
 import img from '../../img/picture2 1.png';
-
+import { ReactSVG } from 'react-svg';
+import logo from '../../img/logo.svg';
 const Tweets = () => {
   const [data, setData] = useState([]);
   const [page, setPage] = useState(1);
@@ -50,17 +52,18 @@ const Tweets = () => {
       <Ul>
         {tweets.map(({ id, avatar, tweets, user, followers }) => {
           return (
-            <CardLi key={id}>
-              <div>
+            <li key={id}>
+              <CardDiv>
                 <BgPhotoDiv>
                   <div>
+                    <img src={logo} alt="goit" />
                     <BgPhoto src={img} alt="logo" />
                   </div>
                 </BgPhotoDiv>
                 <PhotoImg src={avatar} alt={user} />
                 <ContentDiv>
-                  <p>{tweets} TWEETS</p>
-                  <p>{followers} FOLLOWERS</p>
+                  <Text>{tweets} TWEETS</Text>
+                  <Text>{followers} FOLLOWERS</Text>
                 </ContentDiv>
                 <Button
                   onClick={() => {
@@ -69,8 +72,8 @@ const Tweets = () => {
                 >
                   FOLLOW
                 </Button>
-              </div>
-            </CardLi>
+              </CardDiv>
+            </li>
           );
         })}
       </Ul>

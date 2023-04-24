@@ -6,13 +6,13 @@ export const Ul = styled.ul`
   gap: 48px;
 `;
 
-export const CardLi = styled.li`
+export const CardDiv = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 380px;
   height: 460px;
-
+  padding-bottom: 36px;
   background: linear-gradient(
     114.99deg,
     #471ca9 -0.99%,
@@ -51,4 +51,14 @@ export const ContentDiv = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+`;
+
+export const Text = styled.p`
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #ebd8ff;
 `;
