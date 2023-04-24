@@ -1,8 +1,8 @@
 {
-  "name": "tweets",
+  "name": "test-tweets",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Yevhenii770.github.io/home/",
+  "homepage": "test-tweets",
   "dependencies": {
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
