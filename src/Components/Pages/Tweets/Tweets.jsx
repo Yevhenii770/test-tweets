@@ -11,7 +11,6 @@ import {
   Text,
 } from './Tweets.styled';
 import img from '../../img/picture2 1.png';
-import { ReactSVG } from 'react-svg';
 import logo from '../../img/logo.svg';
 const Tweets = () => {
   const [data, setData] = useState([]);
