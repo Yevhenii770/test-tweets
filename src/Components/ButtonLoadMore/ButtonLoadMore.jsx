@@ -1,4 +1,4 @@
-import { BtnLoadMore, BtnDiv } from '../../Pages/Tweets/Tweets.styled';
+import { BtnLoadMore, BtnDiv } from '../UserList/UserList.styled';
 
 const LoadMoreBtn = ({ handleLoadMore }) => {
   return (

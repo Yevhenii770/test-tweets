@@ -1,36 +1,20 @@
 import { useState, useEffect } from 'react';
-import { fetchUsers } from '../../Api/Api';
-import {
-  CardDiv,
-  Ul,
-  PhotoImg,
-  BgPhoto,
-  ContentDiv,
-  Text,
-  Svg,
-  Ellipse,
-  HorizontalLine,
-} from './Tweets.styled';
-import img from '../../img/picture.png';
-import logo from '../../img/logo.svg';
-import line from '../../img/rectangle.svg';
-import ellipse from '../../img/ellipse.svg';
-import LoadMoreBtn from '../../Components/ButtonLoadMore/LoadMore';
-import FollowBtn from '../../Components/ButtonFollow/Follow';
+import { fetchUsers } from '../../redux/operations';
+import LoadMoreBtn from '../../Components/ButtonLoadMore/ButtonLoadMore';
+import { Link } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
+import { selectUsers } from '../../redux/selectors';
+import UserList from '../../Components/UserList/UserList';
+
 const Tweets = () => {
-  const [data, setData] = useState([]);
+  const data = useSelector(selectUsers);
+  const [page, setPage] = useState(1);
+  const dispatch = useDispatch();
 
   useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const results = await fetchUsers();
-        setData([...results]);
-      } catch {}
-    };
-    fetchData();
-  }, []);
+    dispatch(fetchUsers());
+  }, [dispatch]);
 
-  const [page, setPage] = useState(1);
   const ITEMS_PER_PAGE = 3;
 
   const tweets = data.slice(0, ITEMS_PER_PAGE * page);
@@ -49,28 +33,8 @@ const Tweets = () => {
           padding: '10px 10px',
         }}
       >
-        <Ul>
-          {tweets.map(({ id, avatar, tweets, user, followers }) => {
-            return (
-              <li key={id}>
-                <CardDiv>
-                  <div>
-                    <Svg src={logo} alt="goit" />
-                    <BgPhoto src={img} alt="logo" />
-                  </div>
-                  <HorizontalLine src={line} alt="goit" />
-                  <Ellipse src={ellipse} alt="goit" />
-                  <PhotoImg src={avatar} alt={user} />
-                  <ContentDiv>
-                    <Text>{tweets} TWEETS</Text>
-                    <Text>{followers} FOLLOWERS</Text>
-                  </ContentDiv>
-                  <FollowBtn data={data} id={id} />
-                </CardDiv>
-              </li>
-            );
-          })}
-        </Ul>
+        <Link>Go Back</Link>
+        <UserList visibleData={tweets} />
         {!isButtonHidden && <LoadMoreBtn handleLoadMore={handleLoadMore} />}
       </div>
     </main>
