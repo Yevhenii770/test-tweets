@@ -19,6 +19,7 @@ const FollowBtn = ({ isFollowing, followers, id }) => {
 
   return (
     <Button
+      className={isFollowing ? 'active' : 'open'}
       onClick={() => {
         updateSubscribe();
       }}

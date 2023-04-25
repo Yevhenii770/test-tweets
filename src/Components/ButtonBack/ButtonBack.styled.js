@@ -1,5 +1,7 @@
 import styled from '@emotion/styled';
-export const BtnLoadMore = styled.button`
+import { NavLink } from 'react-router-dom';
+
+export const ButtonBack = styled(NavLink)`
   padding: 8px 16px;
   border-radius: 4px;
   text-decoration: none;
@@ -21,7 +23,8 @@ export const BtnLoadMore = styled.button`
     background-color: #5cd3a8;
   }
 `;
+
 export const BtnDiv = styled.div`
   display: flex;
-  justify-content: center;
+  margin-bottom: 10px;
 `;

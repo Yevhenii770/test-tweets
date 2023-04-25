@@ -6,5 +6,28 @@ export const Button = styled.button`
 
   background: #ebd8ff;
   border-radius: 10.3108px;
-  margin-bottom: 36px;
+  box-shadow: 0px 3.43693px 3.43693px rgba(0, 0, 0, 0.25);
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+
+  transition: color 0.25s linear;
+  text-transform: uppercase;
+  border: none;
+  color: #373737;
+
+  // &:hover {
+
+  // }
+
+  // &.active {
+
+  // }
+
+  &.active {
+    background-color: #5cd3a8;
+  }
 `;

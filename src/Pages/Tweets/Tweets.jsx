@@ -1,10 +1,11 @@
 import { useState, useEffect } from 'react';
 import { fetchUsers } from '../../redux/operations';
-import LoadMoreBtn from '../../Components/ButtonLoadMore/ButtonLoadMore';
-import { Link } from 'react-router-dom';
+import Button from '../../Components/ButtonLoadMore/ButtonLoadMore';
+import ButtonGoBack from 'Components/ButtonBack/ButtonBack';
 import { useDispatch, useSelector } from 'react-redux';
 import { selectUsers } from '../../redux/selectors';
 import UserList from '../../Components/UserCard/UserCard';
+import { BtnDiv } from 'Components/ButtonBack/ButtonBack.styled';
 
 const Tweets = () => {
   const data = useSelector(selectUsers);
@@ -33,9 +34,11 @@ const Tweets = () => {
           padding: '10px 10px',
         }}
       >
-        <Link>Go Back</Link>
+        <BtnDiv>
+          <ButtonGoBack />
+        </BtnDiv>
         <UserList visibleData={tweets} />
-        {!isButtonHidden && <LoadMoreBtn handleLoadMore={handleLoadMore} />}
+        {!isButtonHidden && <Button handleLoadMore={handleLoadMore} />}
       </div>
     </main>
   );
