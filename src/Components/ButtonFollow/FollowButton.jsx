@@ -1,4 +1,4 @@
-import { Button } from '../UserList/UserList.styled';
+import { Button } from './FollowBtn.styled';
 import { useDispatch } from 'react-redux';
 import { updFollower } from '../../redux/operations';
 

@@ -1,4 +1,4 @@
-import { BtnLoadMore, BtnDiv } from '../UserList/UserList.styled';
+import { BtnLoadMore, BtnDiv } from './LoadButton.styled';
 
 const LoadMoreBtn = ({ handleLoadMore }) => {
   return (

@@ -4,7 +4,7 @@ import LoadMoreBtn from '../../Components/ButtonLoadMore/ButtonLoadMore';
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { selectUsers } from '../../redux/selectors';
-import UserList from '../../Components/UserList/UserList';
+import UserList from '../../Components/UserCard/UserCard';
 
 const Tweets = () => {
   const data = useSelector(selectUsers);
