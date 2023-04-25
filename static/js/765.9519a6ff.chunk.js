@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunktest_tweets=self.webpackChunktest_tweets||[]).push([[765],{9765:function(e,t,s){s.r(t);var n=s(184);t.default=function(){return(0,n.jsx)("main",{children:"Home page"})}}}]);
+//# sourceMappingURL=765.9519a6ff.chunk.js.map
