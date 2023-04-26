@@ -1,4 +1,15 @@
+import { MainDiv } from './Home.styled';
+import PacmanLoader from 'react-spinners/PacmanLoader';
+
 const Home = () => {
-  return <main>Home page</main>;
+  return (
+    <main>
+      <MainDiv>
+        <div>
+          <PacmanLoader color="#5d44a6" size={130} />
+        </div>
+      </MainDiv>
+    </main>
+  );
 };
 export default Home;

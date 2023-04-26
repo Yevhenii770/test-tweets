@@ -16,7 +16,7 @@ const Tweets = () => {
     dispatch(fetchUsers());
   }, [dispatch]);
 
-  const ITEMS_PER_PAGE = 3;
+  const ITEMS_PER_PAGE = 6;
 
   const tweets = data.slice(0, ITEMS_PER_PAGE * page);
   const isButtonHidden = ITEMS_PER_PAGE * page >= data.length;
@@ -31,7 +31,7 @@ const Tweets = () => {
         style={{
           maxWidth: '1236px',
           margin: '0 auto',
-          padding: '10px 10px',
+          padding: '20px 10px',
         }}
       >
         <BtnDiv>

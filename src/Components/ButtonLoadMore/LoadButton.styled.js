@@ -1,9 +1,11 @@
 import styled from '@emotion/styled';
 export const BtnLoadMore = styled.button`
   padding: 8px 16px;
-  border-radius: 4px;
-  text-decoration: none;
 
+  text-decoration: none;
+  background-color: #f0f3f2;
+  border: 1px solid grey;
+  border-radius: 4px;
   color: black;
   font-size: 24px;
   font-weight: 600;
@@ -14,11 +16,6 @@ export const BtnLoadMore = styled.button`
 
   &:hover {
     color: white;
-  }
-
-  &.active {
-    color: white;
-    background-color: #5cd3a8;
   }
 `;
 export const BtnDiv = styled.div`

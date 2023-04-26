@@ -3,9 +3,11 @@ import { NavLink } from 'react-router-dom';
 
 export const ButtonBack = styled(NavLink)`
   padding: 8px 16px;
-  border-radius: 4px;
-  text-decoration: none;
 
+  text-decoration: none;
+  background-color: #f0f3f2;
+  border: 1px solid grey;
+  border-radius: 4px;
   color: black;
   font-size: 24px;
   font-weight: 600;
@@ -16,11 +18,6 @@ export const ButtonBack = styled(NavLink)`
 
   &:hover {
     color: white;
-  }
-
-  &.active {
-    color: white;
-    background-color: #5cd3a8;
   }
 `;
 
