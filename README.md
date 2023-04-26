@@ -1,3 +1,6 @@
+Description
+- The 'Tweets' application is a one-page dynamic site with the ability to subscribe to users.
+
 ![Image alt](https://github.com/Yevhenii770/test-tweets/blob/main/home.jpg)
 ![Image alt](https://github.com/Yevhenii770/test-tweets/blob/main/tweets.jpg)
 
@@ -17,6 +20,5 @@ Technologies:
 - CSS
 
 
-Description
-- The 'Tweets' application is a one-page dynamic site with the ability to subscribe to users.
+
 
