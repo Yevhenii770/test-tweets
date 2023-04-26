@@ -6,7 +6,7 @@ const Home = () => {
     <main>
       <MainDiv>
         <div>
-          <PacmanLoader color="#5d44a6" size={130} />
+          <PacmanLoader color="#5d44a6" size={90} />
         </div>
       </MainDiv>
     </main>
