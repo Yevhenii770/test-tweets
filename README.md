@@ -1,4 +1,15 @@
 
+Description
+- The 'Tweets' application is a one-page dynamic site with the ability to subscribe to users.
+
+Technologies:
+- Redux Toolkit
+- React Router
+- JavaScript
+- React
+- HTML
+- CSS
+
 Getting Started:
 - Download this repository
 - Make sure you have an LTS version of Node.js installed on your computer. Download and install if needed.
