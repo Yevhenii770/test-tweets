@@ -1,7 +1,7 @@
 import { Suspense } from 'react';
 import { Outlet } from 'react-router-dom';
-import { HeaderDiv } from './Layout.styled';
-import { Link } from './Layout.styled';
+import { HeaderDiv, Link } from './Layout.styled';
+
 const Layout = () => {
   return (
     <>

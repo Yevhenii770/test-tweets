@@ -3,7 +3,6 @@ import { NavLink } from 'react-router-dom';
 
 export const ButtonBack = styled(NavLink)`
   padding: 8px 16px;
-
   text-decoration: none;
   background-color: #f0f3f2;
   border: 1px solid grey;

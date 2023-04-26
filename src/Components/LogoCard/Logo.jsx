@@ -1,5 +1,5 @@
-import img from '../../img/picture.png';
-import logo from '../../img/logo.svg';
+import img from 'img/picture.png';
+import logo from 'img/logo.svg';
 import { Svg, BgPhoto } from './Logo.styled';
 
 const Logo = () => {

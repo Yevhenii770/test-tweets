@@ -1,6 +1,6 @@
 import { Button } from './FollowBtn.styled';
 import { useDispatch } from 'react-redux';
-import { updFollower } from '../../redux/operations';
+import { updFollower } from 'redux/operations';
 
 const FollowBtn = ({ isFollowing, followers, id }) => {
   const dispatch = useDispatch();

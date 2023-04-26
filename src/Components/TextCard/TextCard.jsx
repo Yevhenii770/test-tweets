@@ -3,8 +3,8 @@ import { ContentDiv, Text } from './TextCard.styled';
 const TextCard = ({ tweets, followers }) => {
   return (
     <ContentDiv>
-      <Text>{tweets} TWEETS</Text>
-      <Text>{followers.toLocaleString('en-US')} FOLLOWERS</Text>
+      <Text>{tweets} Tweets</Text>
+      <Text>{followers.toLocaleString('en-US')} Followers</Text>
     </ContentDiv>
   );
 };

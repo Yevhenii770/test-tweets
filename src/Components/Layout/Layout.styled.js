@@ -28,5 +28,3 @@ export const Link = styled(NavLink)`
     background-color: #5cd3a8;
   }
 `;
-
-export const c = styled.div``;

@@ -1,6 +1,7 @@
-import line from '../../img/rectangle.svg';
-import ellipse from '../../img/ellipse.svg';
 import { Ellipse, HorizontalLine } from './Geometry.styled';
+import line from 'img/rectangle.svg';
+import ellipse from 'img/ellipse.svg';
+
 const Geometry = () => {
   return (
     <>
