@@ -1,4 +1,5 @@
-
+![Image alt](https://github.com/Yevhenii770/test-tweets/blob/main/home.jpg)
+![Image alt](https://github.com/Yevhenii770/test-tweets/blob/main/tweets.jpg)
 
 Getting Started:
 - Download this repository
