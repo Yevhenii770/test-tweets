@@ -6,6 +6,7 @@ export const Text = styled.p`
   font-size: 20px;
   line-height: 24px;
   text-transform: uppercase;
+
   color: #ebd8ff;
 `;
 export const ContentDiv = styled.div`
