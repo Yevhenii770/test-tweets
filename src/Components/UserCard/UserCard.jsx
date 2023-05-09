@@ -2,7 +2,6 @@ import { CardDiv, Ul, PhotoImg } from './UserCard.styled';
 
 import FollowBtn from '../ButtonFollow/FollowButton';
 import TextCard from 'Components/TextCard/TextCard';
-import Geometry from 'Components/GeometryCard/GeometryCard';
 import Logo from 'Components/LogoCard/Logo';
 
 const UserList = ({ visibleData }) => {
@@ -14,7 +13,6 @@ const UserList = ({ visibleData }) => {
             <li key={id}>
               <CardDiv>
                 <Logo />
-                <Geometry />
                 <PhotoImg src={avatar} alt={user} />
                 <TextCard tweets={tweets} followers={followers} />
                 <FollowBtn

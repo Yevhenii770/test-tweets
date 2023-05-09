@@ -4,6 +4,10 @@ import { NavLink } from 'react-router-dom';
 export const HeaderDiv = styled.div`
   background-color: #5d44a6;
   padding: 25px 100px;
+
+  @media screen and (min-width: 320px) and (max-width: 420px) {
+    padding: 20px 34px;
+  }
 `;
 
 export const Link = styled(NavLink)`

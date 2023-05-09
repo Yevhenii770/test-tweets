@@ -13,4 +13,14 @@ export const ContentDiv = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 16px;
+
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 8.5px;
+    top: 250px;
+    background-color: #ebd8ff;
+  }
 `;

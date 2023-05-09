@@ -14,12 +14,15 @@ export const Button = styled.button`
   font-size: 18px;
   line-height: 22px;
 
-  transition: color, background-color 0.25s linear;
+  transition: background-color 0.25s linear;
   text-transform: uppercase;
   border: none;
   color: #373737;
 
   &.active {
+    background-color: #5cd3a8;
+  }
+  &:hover {
     background-color: #5cd3a8;
   }
 `;
