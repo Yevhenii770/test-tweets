@@ -16,8 +16,9 @@ Technologies:
 - React Router
 - JavaScript
 - React
-- HTML
+- XML
 - CSS
+- Axios
 
 
 
