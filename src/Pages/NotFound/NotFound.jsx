@@ -13,9 +13,9 @@ const NotFound = () => {
         color: '#010101',
       }}
     >
-      <h1>Упс :( cтраница не найдена...</h1>
+      <h1>Page not found...</h1>
       <p>
-        Может быть вы имели ввиду: <Link to="/">Home</Link>
+        Maybe you want to go: <Link to="/">Home</Link>
       </p>
     </div>
   );
